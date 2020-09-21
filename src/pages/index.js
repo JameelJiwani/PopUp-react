@@ -7,8 +7,8 @@ const IndexPage = () => {
   return (
     <Layout>
       <Hero
-        title="Landing template for startups"
-        content="Our landing page template works for all the devices, so you only have to setup it once, and get beautiful results forever."
+        title="PopUp makes online shopping fun, unique and social."
+        content="Are you tired of opening a million different tabs when searching for an outfit? Curious to know where your best friend got that new shirt they won’t tell you about? With PopUp buying your next outfit is as easy as swiping right. Take the friction out of shopping with curated and personalized recommendations and always stay in the know about when your friends are buying and shopping for new outfits."
         illustration={HeroIllustration}
       />
     </Layout>

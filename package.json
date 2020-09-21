@@ -2,7 +2,7 @@
   "name": "holly_react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lukemcdonald.github.io/holly-react",
+  "homepage": "https://popup-react.web.app",
   "scripts": {
     "build-css": "node-sass-chokidar src/assets/css/scss/style.scss -o src/assets/css",
     "build-js": "react-scripts build",
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
+    "firebase": "^7.21.0",
     "node-sass-chokidar": "^1.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

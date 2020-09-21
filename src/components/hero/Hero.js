@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { setupScrollReveal } from '../../assets/js/main.js';
+import mainScreen from "../../assets/images/main-screen.png";
 
 import NewsletterForm from '../forms/NewsletterForm';
 
@@ -26,7 +27,7 @@ class Hero extends Component {
             </div>
 
             <div className="hero-illustration">
-              <Illustration />
+              <img src={mainScreen} alt="app preview" width="300" height="300"/>
             </div>
           </div>
         </div>

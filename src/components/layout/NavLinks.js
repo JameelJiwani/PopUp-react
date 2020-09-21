@@ -5,9 +5,9 @@ import classnames from 'classnames';
 export default (props) => {
   const links = [
     { text: "Contact", href: "/contact" },
-    { text: "About Us", href: "/about" },
-    { text: "FAQ's", href: "/faqs" },
-    { text: "Support", href: "/support" },
+    { text: "Brands", href: "/about" },
+    // { text: "FAQ's", href: "/faqs" },
+    // { text: "Support", href: "/support" },
   ];
 
   const classNames = classnames(
