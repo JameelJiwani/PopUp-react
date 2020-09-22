@@ -11,7 +11,6 @@ class Hero extends Component {
 
   render() {
     const { title, content } = this.props;
-    const Illustration = this.props.illustration;
 
     return (
       <section className="hero">
