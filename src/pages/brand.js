@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../layouts/index';
 import fyScreen from '../assets/images/fy-screen.png'
 
-const AboutPage = () => {
+const BrandPage = () => {
   return (
     <Layout>
       <article className="entry">
@@ -31,4 +31,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default BrandPage;
