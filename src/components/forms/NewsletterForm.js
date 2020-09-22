@@ -13,7 +13,6 @@ function NewsletterForm(props) {
 
   const handleSubmit = async (evt) => {
     evt.preventDefault();
-    alert(`Submitting Name ${email}`)
     await addToWaitList(email);
   }
 
