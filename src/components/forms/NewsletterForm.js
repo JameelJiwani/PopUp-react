@@ -1,29 +1,31 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import classnames from 'classnames';
+import { addToWaitList } from '../../services/waitlistAPI'
 
-class NewsletterForm extends Component {
-  state = {
-    email: '',
+function NewsletterForm(props) {
+  const [email, setEmail] = useState("");
+
+  const { className, submit = 'Submit' } = props;
+  const classNames = classnames(
+    'newsletter-form field field-grouped is-revealing',
+    className
+  )
+
+  const handleSubmit = async (evt) => {
+    evt.preventDefault();
+    await addToWaitList(email);
   }
 
-  render() {
-    const { className, submit = 'Submit' } = this.props;
-    const classNames = classnames(
-      'newsletter-form field field-grouped is-revealing',
-      className
-    )
-
-    return (
-      <form className={classNames}>
-        <div className="control control-expanded">
-          <input className="input" type="email" name="email" placeholder="Your best email&hellip;" />
-        </div>
-        <div className="control">
-          <button className="button button-primary button-block button-shadow" type="submit">{submit}</button>
-        </div>
-      </form>
-    )
-  }
+  return (
+    <form onSubmit={handleSubmit} className={classNames}>
+      <div className="control control-expanded">
+        <input className="input" type="email" name="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Your best email&hellip;" />
+      </div>
+      <div className="control">
+        <button className="button button-primary button-block button-shadow" type="submit">{submit}</button>
+      </div>
+    </form>
+  )
 }
 
 export default NewsletterForm;
