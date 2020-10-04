@@ -1,19 +1,25 @@
-import React, { Component } from 'react'
+import React, { useEffect } from 'react'
 import { setupScrollReveal } from '../../assets/js/main.js';
 
 import NewsletterForm from '../forms/NewsletterForm';
 import {NavLink} from "react-router-dom";
 
-class Hero extends Component {
-  componentDidMount() {
+const Hero = (props) => {
+  useEffect(() => {
     setupScrollReveal();
+  });
+
+  function redirectToTypeform(e) {
+    e.preventDefault();
+    window.location.href='https://form.typeform.com/to/LlfaVy';
   }
 
-  render() {
-    const { title, content } = this.props;
-    const Illustration = this.props.illustration;
 
-    return (
+  const { title, content } = props;
+  const Illustration = props.illustration;
+
+  return (
+
       <section className="hero">
         <div className="container">
           <div className="hero-inner">
@@ -22,7 +28,7 @@ class Hero extends Component {
                 <h1 className="hero-title h2-mobile mt-0 is-revealing">{title}</h1>
                 <p className="hero-paragraph is-revealing">{content} <a href={"/brand"} className={"brandsCTA"}>Learn more about selling on PopUp</a></p>
               </div>
-              <NewsletterForm className="hero-form" submit="Get early access" />
+              <button className="button button-primary button-block button-shadow"  onClick={redirectToTypeform} type="button">{"Get early access"}</button>
             </div>
           </div>
         </div>
@@ -32,8 +38,7 @@ class Hero extends Component {
           </div>
         </div>
       </section>
-    )
-  }
+  )
 }
 
 export default Hero;
