@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../layouts/index';
-import fyScreen from '../assets/images/fy-screen.png'
+import fyScreen from '../assets/images/forYouScreen.png'
 
 const BrandPage = () => {
   return (
@@ -11,13 +11,16 @@ const BrandPage = () => {
             <div className="entry-content">
               <div className="container-sm">
                 <header className="entry-header">
-                  <h1 className="entry-title">Convert customer browsing into Sales Using Pop-Up</h1>
+                  <h1 className="entry-title">Evaluate your shops metrics and convert customer browsing into sales using PopUp</h1>
                 </header>
 
                 <div className="entry-body">
-                  <p>
-                    PopUp will save your brand time and money. Reduce your marketing expenses and let customers come to you. With PopUp’s curated and personalized recommendations, shoppers have the ability to buy from you with ease. All this and more all for free.
-                </p>
+                    <ul>
+                      <li className={"list-item"}>Order Requests</li>
+                      <li className={"list-item"}>Daily Sales</li>
+                      <li className={"list-item"}>Number of Customers putting your products in their carts</li>
+                      <li className={"list-item"}>More than 3+ other metrics</li>
+                    </ul>
                 </div>
               </div>
             </div>

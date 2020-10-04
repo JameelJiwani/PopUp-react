@@ -1,5 +1,10 @@
 .hero {
     text-align: center;
+	display: flex;
+	margin: 0 auto;
+	max-width: 1128px;
+	flex-direction: column;
+	align-items: center;
 }
 
 .hero-inner {
@@ -92,6 +97,19 @@
     left: 185px;
 }
 
+.brands {
+	margin-top: 20px;
+	margin-bottom: 25px;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.brandsCTA {
+	color: blue;
+}
+
 @include media( '>medium' ) {
 
     .hero-paragraph {
@@ -133,6 +151,7 @@
         padding-top: 80px;
         padding-bottom: 80px;
 		padding-right: 150px;
+		flex-direction: row;
 
         &::before {
             top: -80px; /* Header height */
@@ -173,9 +192,9 @@
         }
     }
 
-    .hero-form {
-        margin: 0;
-    }
+    //.hero-form {
+    //    margin: 0;
+    //}
 
     .hero-squares-2,
     .hero-ball-1,

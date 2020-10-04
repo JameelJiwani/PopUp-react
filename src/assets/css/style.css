@@ -1075,7 +1075,12 @@ label {
 # Hero
 --------------------------------------------------------------*/
 .hero {
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1128px;
+  flex-direction: column;
+  align-items: center; }
 
 .hero-inner {
   position: relative;
@@ -1148,6 +1153,17 @@ label {
   top: 308px;
   left: 185px; }
 
+.brands {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center; }
+
+.brandsCTA {
+  color: blue; }
+
 @media (min-width: 641px) {
   .hero-paragraph {
     padding-left: 72px;
@@ -1171,7 +1187,8 @@ label {
     text-align: left;
     padding-top: 80px;
     padding-bottom: 80px;
-    padding-right: 150px; }
+    padding-right: 150px;
+    flex-direction: row; }
     .hero::before {
       top: -80px;
       /* Header height */
@@ -1194,8 +1211,6 @@ label {
       content: normal; }
   .hero-illustration-browser svg {
     width: 800px; }
-  .hero-form {
-    margin: 0; }
   .hero-squares-2,
   .hero-ball-1,
   .hero-ball-3 {
