@@ -110,6 +110,10 @@
 	color: blue;
 }
 
+.waitlistCTA {
+	margin: 0 auto;
+}
+
 @include media( '>medium' ) {
 
     .hero-paragraph {

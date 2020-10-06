@@ -25,6 +25,7 @@ const BrandPage = () => {
               </div>
             </div>
             <div className="entry-media">
+              <span className={"helper"}></span>
               <img src={fyScreen} alt="app preview" width="300" height="300"/>
             </div>
           </div>

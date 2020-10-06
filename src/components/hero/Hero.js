@@ -26,9 +26,9 @@ const Hero = (props) => {
             <div className="hero-copy">
               <div className="container-sm">
                 <h1 className="hero-title h2-mobile mt-0 is-revealing">{title}</h1>
-                <p className="hero-paragraph is-revealing">{content} <a href={"/brand"} className={"brandsCTA"}>Learn more about selling on PopUp</a></p>
+                <p className="hero-paragraph is-revealing">{content}<br/><a href={"/brand"} className={"brandsCTA"}>Learn more about selling on PopUp</a></p>
               </div>
-              <button className="button button-primary button-block button-shadow"  onClick={redirectToTypeform} type="button">{"Get early access"}</button>
+              <button className="button button-primary button-block button-shadow waitlistCTA"  onClick={redirectToTypeform} type="button">{"Get early access"}</button>
             </div>
           </div>
         </div>
