@@ -1208,7 +1208,7 @@ label {
     padding-left: 0;
     padding-right: 0; }
   .hero-illustration {
-    right: 0;
+    right: -160px;
     padding: 0; }
     .hero-illustration::before {
       content: normal; }
