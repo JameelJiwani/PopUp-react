@@ -114,6 +114,12 @@
 	margin: 0 auto;
 }
 
+@include media( '<medium' ) {
+	.hero-illustration-browser {
+		right: 40px;
+	}
+}
+
 @include media( '>medium' ) {
 
     .hero-paragraph {
@@ -181,7 +187,7 @@
     }
 
     .hero-illustration {
-        right: 0;
+        right: -160px;
         padding: 0;
 
         &::before {

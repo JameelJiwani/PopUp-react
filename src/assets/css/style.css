@@ -1167,6 +1167,10 @@ label {
 .waitlistCTA {
   margin: 0 auto; }
 
+@media (max-width: 639px) {
+  .hero-illustration-browser {
+    right: 40px; } }
+
 @media (min-width: 641px) {
   .hero-paragraph {
     padding-left: 72px;
@@ -1208,7 +1212,7 @@ label {
     padding-left: 0;
     padding-right: 0; }
   .hero-illustration {
-    right: 0;
+    right: -160px;
     padding: 0; }
     .hero-illustration::before {
       content: normal; }
